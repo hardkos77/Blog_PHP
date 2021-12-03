@@ -10,13 +10,12 @@
     <hr />
     <header>
         <h2 id="titreIngredient">Ingrédients</h2>
+        <ul>
         <?php
-        echo '<ul>';
-        foreach ($ingredients as $ingredient){
-            echo '<li>'.$ingredient['quantite'].' '.$ingredient['unit'].' '.$ingredient['nom'].'</li>';
-        }
-        echo '</ul>';
-        ?>
+        foreach ($ingredients as $ingredient){ ?>
+            <li><?=$ingredient['quantite']?> <?=$ingredient['unit']?> <?=$ingredient['nom']?></li>
+        <?php } ?>
+        </ul>
     </header>
     <h2 id="titreCommentaire">Commentaires</h2>
 
