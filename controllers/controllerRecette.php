@@ -30,7 +30,7 @@ class controllerRecette extends Controller{
         $this->commentaire->ajouterCommentaire($_GET['id'],$_POST['auteur'], $_POST['note'],$_POST['contenu']);
         $stringLocation ='Location: index.php?controller=recette&action=recette&id='.$_GET['id'];
         header($stringLocation);
-    } 
+    }
 
 }
 

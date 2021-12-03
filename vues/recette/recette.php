@@ -23,8 +23,6 @@
     <h2 id="titreCommentaire">Commentaires</h2>
 
     <?php
-
-
         foreach ($commentaires as $commentaire){
             echo '<div class="divCommentaires">';
             echo '<p>' .$commentaire['auteur'] . '</p>';
@@ -35,9 +33,10 @@
             echo '</div>';
         }
     ?>
+
     <form method="POST" action="index.php?controller=recette&action=commenter&id=<?php echo $_GET['id'] ?>" >
-        <input id="auteur" name="auteur" type="text" placeholder="Votre Nom"/>
-        <textarea id="txtCommentaire" name="contenu" rows="4" placeholder="Votre commentaire"></textarea>
+        <input id="auteur" name="auteur" type="text" placeholder="Votre Nom"/> </br>
+        <textarea id="txtCommentaire" name="contenu" rows="4" placeholder="Votre commentaire"></textarea></br>
         <label for="note">Note</label><br />
         <select name="note" id="note">
             <option value="1">1</option>
