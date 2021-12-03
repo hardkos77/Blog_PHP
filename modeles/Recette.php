@@ -4,7 +4,6 @@ require_once 'framework/Modele.php';
 
 class Recette extends Modele{
 
-
     public function getRecettes(){
         return $this->executerRequete('SELECT * FROM recette')->fetchAll();
     }
